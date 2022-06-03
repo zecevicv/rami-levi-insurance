@@ -69,13 +69,13 @@ body {
     font-size: 4.83vw;
     padding: 0 6vw;
   }
-  
+
   .btn.btn-large {
     height: 13.285vw;
     font-size: 7.73vw;
     padding: 0 6vw;
   }
-  
+
   .btn span {
     margin-bottom: -2.2vw;
     margin-right: 1vw;
@@ -120,7 +120,7 @@ body {
 
 .checkbox input:checked {
   border-color: white;
-  background-color:transparent;
+  background-color: transparent;
 }
 
 .checkbox label {
@@ -199,7 +199,7 @@ body {
   .sidebar {
     padding: 4vw 0 4.83vw 0;
   }
-  
+
   .sidebar h2 {
     width: 60.38vw;
     margin-bottom: 2.25vw;
@@ -225,6 +225,7 @@ body {
 ================================================== */
 .main {
   position: relative;
+  flex-grow: 1;
 }
 
 /* Bg Shape */
@@ -260,6 +261,7 @@ body {
 
 .main .heading {
   margin-bottom: 3.65vw;
+  width: 100%;
 }
 
 .main .heading h1 {
@@ -294,6 +296,11 @@ body {
   flex: 0 0 11vw;
 }
 
+.main .cards.three-columns li {
+  flex: 0 0 11vw;
+  height: 4.5vw;
+}
+
 .main .cards li img {
   position: absolute;
   top: 0;
@@ -320,12 +327,12 @@ body {
   .main {
     position: static;
   }
-  
+
   /* Bg Shape */
   .main .bg-shape {
     display: none;
   }
-  
+
   /* Top */
   .main .top {
     height: auto;
@@ -338,52 +345,63 @@ body {
   .main .logo {
     width: 100%;
   }
-  
+
   .main .logo .gradient-orange {
     padding: 7.25vw 0;
   }
-  
+
   .main .logo img {
     width: 71.25vw;
     margin: 0 auto;
   }
-  
+
   .main .heading {
     margin: 0 auto;
     margin-top: 8.45vw;
     margin-bottom: 14.5vw;
     width: 85vw;
   }
-  
+
   .main .heading h1 {
     margin-bottom: 3.38vw;
     line-height: 1;
   }
-  
+
   .main .cards ul {
     margin: -6vw -1.8vw;
   }
-  
+
+  .main .cards.three-columns ul {
+    justify-content: flex-start;
+    padding-right: 11vw;
+    margin: -6vw 0;
+  }
+
   .main .cards.two-columns {
     width: 85%;
   }
-  
+
   .main .cards li {
     margin: 6vw 1.8vw;
     border-radius: 5.3vw;
     height: 19.32vw;
     padding: 0 4vw;
   }
-  
+
   .main .cards.two-columns li {
     flex: 0 0 33.81vw;
   }
-  
+
+  .main .cards.three-columns li {
+    flex: 0 0 35.75vw;
+    height: 14.75vw;
+  }
+
   .main .cards li img {
     height: 10.85vw;
     width: 10.85vw;
   }
-  
+
   /* Bottom */
   .main .bottom {
     position: absolute;
@@ -446,7 +464,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
   }
-  
+
   .illness-page .big-img img,
   .illness-page .big-img picture {
     width: 63vw;
@@ -458,7 +476,7 @@ body {
 
   .illness-page .sidebar {
     padding: 13vw 0 4.83vw 0;
-}
+  }
 }
 
 /* Mortgage Page */
@@ -479,7 +497,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
   }
-  
+
   .mortgage-page .big-img img,
   .mortgage-page .big-img picture {
     width: 50.43vw;
@@ -491,7 +509,7 @@ body {
 
   .mortgage-page .sidebar {
     padding: 13vw 0 4.83vw 0;
-}
+  }
 }
 
 /* Vehicle Page */
@@ -511,7 +529,7 @@ body {
     bottom: 50vw;
     left: 0;
   }
-  
+
   .vehicle-page .big-img img,
   .vehicle-page .big-img picture {
     width: 96vw;
@@ -523,7 +541,35 @@ body {
 
   .vehicle-page .sidebar {
     padding: 13vw 0 4.83vw 0;
+  }
 }
+
+/* Apartment Page */
+.apartment-page .big-img {
+  position: absolute;
+  bottom: 0;
+  left: 25.55vw;
+}
+
+.apartment-page .big-img img,
+.apartment-page .big-img picture {
+  width: 27.18vw;
+}
+
+@media (max-width: 1023.98px) {
+  .apartment-page .big-img {
+    bottom: 61vw;
+    left: 0;
+  }
+
+  .apartment-page .big-img img,
+  .apartment-page .big-img picture {
+    width: 49.75vw;
+  }
+
+  .apartment-page .main .heading {
+    margin-bottom: 10vw;
+  }
 }
 
 /* #Contact Popup
