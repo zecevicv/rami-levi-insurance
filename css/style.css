@@ -1,0 +1,465 @@
+/* #Fonts
+================================================== */
+@font-face {
+  font-family: "open-sans";
+  font-weight: 400;
+  src: url("../font/OpenSansHebrew-Regular.ttf");
+}
+
+@font-face {
+  font-family: "open-sans";
+  font-weight: 600;
+  src: url("../font/OpenSansHebrew-Bold.ttf");
+}
+
+/* #Global
+================================================== */
+body {
+  font-family: 'open-sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+/* #Btn
+================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 2vw;
+  font-size: 1.15vw;
+  font-weight: bold;
+  border-radius: 500px;
+  padding: 0 3.85vw;
+  border: none;
+}
+
+.btn.btn-large {
+  height: 5.2vw;
+  font-size: 3.125vw;
+  padding: 0 2.25vw;
+}
+
+.btn span {
+  margin-bottom: -.75vw;
+  margin-right: .5vw;
+}
+
+/* Primary */
+.btn.btn-primary {
+  color: white;
+  background-image: linear-gradient(to bottom, #5A5A5A, #2C2C2C);
+}
+
+/* Secondary */
+.btn.btn-secondary {
+  color: white;
+  background-image: linear-gradient(to bottom, #FA841D, #F1711F);
+}
+
+@media (max-width: 1023.98px) {
+  .btn {
+    height: 13.285vw;
+    font-size: 4.83vw;
+    padding: 0 6vw;
+  }
+  
+  .btn.btn-large {
+    height: 13.285vw;
+    font-size: 7.73vw;
+    padding: 0 6vw;
+  }
+  
+  .btn span {
+    margin-bottom: -2.2vw;
+    margin-right: 1vw;
+  }
+}
+
+/* #Gradient Orange
+================================================== */
+.gradient-orange {
+  color: white;
+  background-image: linear-gradient(to bottom, #EB6520, #FF8D1C);
+}
+
+/* #Input
+================================================== */
+.input-primary {
+  font-family: inherit;
+  background-color: white;
+  text-align: center;
+  border: none;
+  border-radius: .5vw;
+  height: 1.875vw;
+  width: 13.17vw;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, .16);
+}
+
+@media (max-width: 1023.98px) {
+  .input-primary {
+    border-radius: 2.65vw;
+    height: 10.15vw;
+    width: 71.25vw;
+  }
+}
+
+/* #Checkbox
+================================================== */
+.checkbox input {
+  border-radius: 4px;
+  border-color: white;
+  border-width: 3px;
+}
+
+.checkbox input:checked {
+  border-color: white;
+  background-color:transparent;
+}
+
+.checkbox label {
+  padding-right: .416vw;
+}
+
+@media (max-width: 1023.98px) {
+  .checkbox input {
+    border-color: #383532;
+  }
+
+  .checkbox input:checked {
+    border-color: #383532;
+  }
+
+  .checkbox label {
+    padding-right: 1.5vw;
+  }
+
+  .checkbox input:checked {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 10' fill='none' %3E %3Cpath stroke='%23383532' d='M1 6L4 9L11 1' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' %3E %3C/path%3E %3C/svg%3E");
+  }
+}
+
+/* #Page Template
+================================================== */
+.page-template {
+  display: flex;
+  position: relative;
+}
+
+@media (max-width: 1023.98px) {
+  .page-template {
+    display: block;
+    padding-bottom: 24.15vw;
+  }
+}
+
+/* #Sidebar
+================================================== */
+.sidebar {
+  flex: 0 0 25.88%;
+  padding: 4.68vw 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sidebar h2 {
+  width: 16.66vw;
+  line-height: 1;
+  margin-bottom: 1.8vw;
+}
+
+.sidebar h3 {
+  margin: 1.8vw 0;
+  line-height: 1.2;
+}
+
+.sidebar .input-primary {
+  margin-bottom: .8vw;
+}
+
+.sidebar .checkbox {
+  margin: .78vw 0 .78vw 0;
+  justify-content: center;
+}
+
+.sidebar a.text-underline {
+  display: inline-block;
+  margin: 2.34vw 0 8.4vw 0;
+}
+
+@media (max-width: 1023.98px) {
+  .sidebar {
+    padding: 4vw 0 4.83vw 0;
+  }
+  
+  .sidebar h2 {
+    width: 60.38vw;
+    margin-bottom: 2.25vw;
+  }
+
+  .sidebar .d-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sidebar .d-mobile p {
+    margin: 0 4.1vw;
+  }
+
+  .sidebar .d-mobile .btn {
+    padding: 0;
+    width: 36.23vw;
+  }
+}
+
+/* #Main
+================================================== */
+.main {
+  position: relative;
+}
+
+/* Bg Shape */
+.main .bg-shape {
+  position: absolute;
+  right: 0;
+  top: 18.75vw;
+}
+
+.main .bg-shape {
+  width: 13.95vw;
+}
+
+.main .bg-shape img {
+  width: 100%;
+}
+
+/* Top */
+.main .top {
+  height: 47.81vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 11.71vw;
+  padding-top: 2.6vw;
+}
+
+.main .logo img {
+  width: 33.5vw;
+  margin-bottom: 1.8vw;
+}
+
+.main .heading {
+  margin-bottom: 3.65vw;
+}
+
+.main .heading h1 {
+  margin-bottom: 1vw;
+}
+
+.main .cards ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -2vw -1.15vw;
+}
+
+.main .cards.two-columns {
+  width: 55%;
+}
+
+.main .cards li {
+  margin: 2vw 1.15vw;
+  border: 3px solid #EB6520;
+  border-radius: 1.2vw;
+  height: 6.2vw;
+  padding: 0 1.7vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.1;
+}
+
+.main .cards.two-columns li {
+  flex: 0 0 11vw;
+}
+
+.main .cards li img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background-color: white;
+  height: 3.125vw;
+  width: 3.125vw;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Bottom */
+.main .bottom {
+  color: white;
+  background-image: linear-gradient(to bottom, #1B1918, #383532);
+  height: 8.33vw;
+  padding: 1.3vw;
+  display: flex;
+  align-items: flex-end;
+}
+
+@media (max-width: 1023.98px) {
+  .main {
+    position: static;
+  }
+  
+  /* Bg Shape */
+  .main .bg-shape {
+    display: none;
+  }
+  
+  /* Top */
+  .main .top {
+    height: auto;
+    padding: 0;
+    padding-top: 0;
+    padding-bottom: 11.6vw;
+  }
+
+  .main .logo {
+    width: 100%;
+  }
+  
+  .main .logo .gradient-orange {
+    padding: 7.25vw 0;
+  }
+  
+  .main .logo img {
+    width: 71.25vw;
+    margin: 0 auto;
+  }
+  
+  .main .heading {
+    margin: 0 auto;
+    margin-top: 8.45vw;
+    margin-bottom: 14.5vw;
+    width: 85vw;
+  }
+  
+  .main .heading h1 {
+    margin-bottom: 3.38vw;
+    line-height: 1;
+  }
+  
+  .main .cards ul {
+    margin: -6vw -1.8vw;
+  }
+  
+  .main .cards.two-columns {
+    width: 85%;
+  }
+  
+  .main .cards li {
+    margin: 6vw 1.8vw;
+    border-radius: 5.3vw;
+    height: 19.32vw;
+    padding: 0 4vw;
+  }
+  
+  .main .cards.two-columns li {
+    flex: 0 0 33.81vw;
+  }
+  
+  .main .cards li img {
+    height: 10.85vw;
+    width: 10.85vw;
+  }
+  
+  /* Bottom */
+  .main .bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 24.15vw;
+    padding: 3.62vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .main .bottom p:last-child {
+    margin-top: 3vw;
+  }
+}
+
+/* #Page Specific Settings
+================================================== */
+/* Health Page */
+.health-page .big-img {
+  position: absolute;
+  bottom: 0;
+  left: 23.34vw;
+}
+
+.health-page .big-img img {
+  width: 28.28vw;
+}
+
+@media (max-width: 1023.98px) {
+  .health-page .big-img {
+    display: none;
+  }
+}
+
+/* #Contact Popup
+================================================== */
+#contactPopup {
+  background-color: rgba(255, 255, 255, .85);
+}
+
+#contactPopup .popup-content {
+  width: 82.85%;
+  border-radius: 8.45vw;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .15);
+  padding: 12vw 4vw 13.28vw 4vw;
+  text-align: center;
+  position: relative;
+}
+
+#contactPopup .logo img {
+  width: 67.63vw;
+  margin: 0 auto;
+  margin-bottom: 12.56vw;
+}
+
+#contactPopup form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contactPopup .btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+#contactPopup .input-primary {
+  margin-bottom: 4.83vw;
+}
+
+#contactPopup .checkbox {
+  margin-top: 4.83vw;
+  margin-bottom: 2vw;
+}

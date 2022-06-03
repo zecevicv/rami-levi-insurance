@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68.785" height="74.889" viewBox="0 0 68.785 74.889">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_661" data-name="Rectangle 661" width="68.785" height="74.889" fill="none" stroke="#eb6520" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_16180" data-name="Group 16180" transform="translate(0 0)">
+    <g id="Group_16179" data-name="Group 16179" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <path id="Path_7221" data-name="Path 7221" d="M67.492,65.349H1a8.025,8.025,0,0,1,8.025-8.025H59.467A8.025,8.025,0,0,1,67.492,65.349Z" transform="translate(0.146 8.393)" fill="none" stroke="#eb6520" stroke-miterlimit="10" stroke-width="2"/>
+      <rect id="Rectangle_657" data-name="Rectangle 657" width="22.928" height="9.171" transform="translate(24.737 32.253) rotate(-63.256)" fill="none" stroke="#eb6520" stroke-miterlimit="10" stroke-width="2"/>
+      <rect id="Rectangle_658" data-name="Rectangle 658" width="4.586" height="13.757" transform="translate(20.626 35.316) rotate(-63.256)" fill="none" stroke="#eb6520" stroke-miterlimit="10" stroke-width="2"/>
+      <rect id="Rectangle_659" data-name="Rectangle 659" width="6.878" height="4.586" transform="translate(37.103 12.809) rotate(-63.256)" fill="none" stroke="#eb6520" stroke-miterlimit="10" stroke-width="2"/>
+      <rect id="Rectangle_660" data-name="Rectangle 660" width="4.586" height="9.171" transform="translate(38.151 5.634) rotate(-63.256)" fill="none" stroke="#eb6520" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_7222" data-name="Path 7222" d="M40.2,42.324A17.2,17.2,0,0,0,23,59.52H57.393A17.2,17.2,0,0,0,40.2,42.324Z" transform="translate(3.368 6.197)" fill="none" stroke="#eb6520" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_7223" data-name="Path 7223" d="M31.978,26.788a11.6,11.6,0,0,1,1.172-.06,11.458,11.458,0,0,1,8.01,19.658,17.133,17.133,0,0,1,10.4,5.436,22.9,22.9,0,0,0-13.77-36.088" transform="translate(4.682 2.303)" fill="none" stroke="#eb6520" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_7224" data-name="Path 7224" d="M32.928,44.324H10V51.2H26.9a17.277,17.277,0,0,1,5.78-6.351C32.236,44.7,33.342,44.525,32.928,44.324Z" transform="translate(1.464 6.489)" fill="none" stroke="#eb6520" stroke-miterlimit="10" stroke-width="2"/>
+      <circle id="Ellipse_24" data-name="Ellipse 24" cx="2.293" cy="2.293" r="2.293" transform="translate(41.271 53.107)" fill="none" stroke="#eb6520" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
