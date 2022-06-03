@@ -18,6 +18,7 @@ body {
   font-family: 'open-sans', sans-serif;
   font-weight: 400;
   line-height: 1.4;
+  position: relative;
 }
 
 .text-underline {
@@ -331,6 +332,7 @@ body {
     padding: 0;
     padding-top: 0;
     padding-bottom: 11.6vw;
+    min-height: 157vw;
   }
 
   .main .logo {
@@ -401,6 +403,12 @@ body {
   }
 }
 
+/* #Big Img
+================================================== */
+.big-img {
+  pointer-events: none;
+}
+
 /* #Page Specific Settings
 ================================================== */
 /* Health Page */
@@ -418,6 +426,39 @@ body {
   .health-page .big-img {
     display: none;
   }
+}
+
+/* Illness Page */
+.illness-page .big-img {
+  position: absolute;
+  bottom: 0;
+  left: 16.3vw;
+}
+
+.illness-page .big-img img,
+.illness-page .big-img picture {
+  width: 40vw;
+}
+
+@media (max-width: 1023.98px) {
+  .illness-page .big-img {
+    bottom: 55.55vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .illness-page .big-img img,
+  .illness-page .big-img picture {
+    width: 63vw;
+  }
+
+  .illness-page .main .heading {
+    margin-bottom: 10vw;
+  }
+
+  .illness-page .sidebar {
+    padding: 13vw 0 4.83vw 0;
+}
 }
 
 /* #Contact Popup
