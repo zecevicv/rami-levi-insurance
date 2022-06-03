@@ -494,6 +494,38 @@ body {
 }
 }
 
+/* Vehicle Page */
+.vehicle-page .big-img {
+  position: absolute;
+  bottom: 0;
+  left: 14.95vw;
+}
+
+.vehicle-page .big-img img,
+.vehicle-page .big-img picture {
+  width: 60.2vw;
+}
+
+@media (max-width: 1023.98px) {
+  .vehicle-page .big-img {
+    bottom: 50vw;
+    left: 0;
+  }
+  
+  .vehicle-page .big-img img,
+  .vehicle-page .big-img picture {
+    width: 96vw;
+  }
+
+  .vehicle-page .main .heading {
+    margin-bottom: 10vw;
+  }
+
+  .vehicle-page .sidebar {
+    padding: 13vw 0 4.83vw 0;
+}
+}
+
 /* #Contact Popup
 ================================================== */
 #contactPopup {
