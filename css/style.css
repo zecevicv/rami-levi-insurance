@@ -572,6 +572,39 @@ body {
   }
 }
 
+/* Travel Page */
+.travel-page .big-img {
+  position: absolute;
+  bottom: 0;
+  left: 14vw;
+}
+
+.travel-page .big-img img,
+.travel-page .big-img picture {
+  width: 49.11vw;
+}
+
+@media (max-width: 1023.98px) {
+  .travel-page .big-img {
+    bottom: 54vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .travel-page .big-img img,
+  .travel-page .big-img picture {
+    width: 61.6vw;
+  }
+
+  .travel-page .main .heading {
+    margin-bottom: 10vw;
+  }
+
+  .travel-page .sidebar {
+    padding: 13vw 0 4.83vw 0;
+  }
+}
+
 /* #Contact Popup
 ================================================== */
 #contactPopup {
