@@ -461,6 +461,39 @@ body {
 }
 }
 
+/* Mortgage Page */
+.mortgage-page .big-img {
+  position: absolute;
+  bottom: 0;
+  left: 21vw;
+}
+
+.mortgage-page .big-img img,
+.mortgage-page .big-img picture {
+  width: 30.52vw;
+}
+
+@media (max-width: 1023.98px) {
+  .mortgage-page .big-img {
+    bottom: 60.55vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .mortgage-page .big-img img,
+  .mortgage-page .big-img picture {
+    width: 50.43vw;
+  }
+
+  .mortgage-page .main .heading {
+    margin-bottom: 10vw;
+  }
+
+  .mortgage-page .sidebar {
+    padding: 13vw 0 4.83vw 0;
+}
+}
+
 /* #Contact Popup
 ================================================== */
 #contactPopup {
