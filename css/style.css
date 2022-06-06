@@ -694,7 +694,8 @@ body {
 }
 
 .employees .top .logo img {
-  width: 100%;
+  width: 62.8vw;
+  margin: 0 auto;
   margin-bottom: 9.17vw;
 }
 
