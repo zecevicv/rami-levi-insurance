@@ -136,7 +136,7 @@ body {
   appearance: none;
   background-image: url('../img/icons/chevron-down-gray.svg');
   background-repeat: no-repeat;
-  background-position: 3.6vw 50%;
+  background-position: .6vw 50%;
 }
 
 @media (max-width: 1023.98px) {
@@ -144,6 +144,7 @@ body {
     border-radius: 2.65vw;
     height: 10.15vw;
     width: 71.25vw;
+    background-position: 3.6vw 50%;
   }
 }
 
@@ -194,6 +195,11 @@ body {
     display: block;
     padding-bottom: 24.15vw;
   }
+
+  .home-page .page-template {
+    margin-bottom: 37.33vw;
+    padding-bottom: 0;
+  }
 }
 
 /* #Sidebar
@@ -205,6 +211,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  position: relative;
 }
 
 .sidebar h2 {
@@ -218,7 +225,8 @@ body {
   line-height: 1.2;
 }
 
-.sidebar .input-primary {
+.sidebar .input-primary,
+.sidebar .select-primary {
   margin-bottom: .8vw;
 }
 
@@ -227,9 +235,29 @@ body {
   justify-content: center;
 }
 
+.home-page .sidebar .checkbox {
+  margin: .78vw 0 0 0;
+}
+
 .sidebar a.text-underline {
   display: inline-block;
   margin: 2.34vw 0 8.4vw 0;
+}
+
+.home-page .sidebar a.text-underline {
+  margin: .65vw 0 10.5vw 0;
+}
+
+.sidebar-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 4vw;
+  width: 19.16vw;
+}
+
+.sidebar-logo img {
+  width: 19.16vw;
 }
 
 @media (max-width: 1023.98px) {
@@ -255,6 +283,14 @@ body {
   .sidebar .d-mobile .btn {
     padding: 0;
     width: 36.23vw;
+  }
+
+  .home-page .sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
   }
 }
 
@@ -289,6 +325,11 @@ body {
   align-items: center;
   padding: 0 11.71vw;
   padding-top: 2.6vw;
+}
+
+.home-page .main .top {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .main .logo img {
@@ -338,6 +379,8 @@ body {
   height: 4.5vw;
 }
 
+
+
 .main .cards li img {
   position: absolute;
   top: 0;
@@ -360,6 +403,19 @@ body {
   align-items: flex-end;
 }
 
+
+@media (min-width: 1024px) {
+  .home-page .main .bottom {
+    display: none!important;
+  }
+
+  .home-page .main .cards.three-columns li {
+    flex: 0 0 11.25vw;
+    padding: 0;
+    height: 3.125vw;
+  }
+}
+
 @media (max-width: 1023.98px) {
   .main {
     position: static;
@@ -377,6 +433,11 @@ body {
     padding-top: 0;
     padding-bottom: 11.6vw;
     min-height: 157vw;
+  }
+
+  .home-page .main .top {
+    min-height: 0;
+    padding-bottom: 0;
   }
 
   .main .logo {
@@ -439,6 +500,10 @@ body {
     width: 10.85vw;
   }
 
+  .home-page .main .cards {
+    margin-bottom: 19.8vw;
+  }
+
   /* Bottom */
   .main .bottom {
     position: absolute;
@@ -455,6 +520,13 @@ body {
 
   .main .bottom p:last-child {
     margin-top: 3vw;
+  }
+
+  .home-page .bottom {
+    height: 65.2vw;
+    justify-content: flex-start;
+    position: static;
+    padding-top: 9.2vw;
   }
 }
 
@@ -642,6 +714,31 @@ body {
   }
 }
 
+/* Home Page */
+.home-page .big-img {
+  position: absolute;
+  bottom: 0;
+  left: 18.64vw;
+}
+
+.home-page .big-img img,
+.home-page .big-img picture {
+  width: 20.83vw;
+}
+
+@media (max-width: 1023.98px) {
+  .home-page .big-img {
+    bottom: 65vw;
+    left: auto;
+    right: 0;
+  }
+
+  .home-page .big-img img,
+  .home-page .big-img picture {
+    width: 50vw;
+  }
+}
+
 /* #Contact Popup
 ================================================== */
 #contactPopup {
@@ -745,4 +842,88 @@ body {
 
 .employees .bottom .btns .btn {
   min-width: 39.85vw;
+}
+
+/* #Insurance Bar
+================================================== */
+.insurance-bar {
+  color: white;
+  background-image: linear-gradient(to bottom, #383532, #000000);
+  width: 100%;
+  padding: 1.35vw 0 1.8vw 0;
+  margin-top: auto;
+}
+
+.insurance-bar .btn {
+  margin-top: .5vw;
+}
+
+@media (min-width: 1023.98px) {
+  .insurance-bar .btn {
+    height: 3.85vw;
+    font-size: 1.4vw;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .insurance-bar {
+    padding: 8vw 45vw 8vw 3.62vw;
+    margin-top: 0;
+  }
+
+  .insurance-bar .btn {
+    margin-top: 3.15vw;
+  }
+}
+
+/* #Home Bottom
+================================================== */
+.home-bottom {
+  padding: 1.8vw 2.18vw 1.3vw 2.18vw;
+  background-image: linear-gradient(to bottom right, #FCFCFC, #E2E2E2);
+}
+
+.home-bottom .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 1vw;
+}
+
+.home-bottom .social ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: .78vw;
+}
+
+.home-bottom .social li:not(:last-child) {
+  margin-left: 3.65vw;
+}
+
+@media (max-width: 1023.98px) {
+  .home-bottom {
+    padding: 9.42vw 41vw 8vw 10.8vw;
+  }
+  
+  .home-bottom .social {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .home-bottom p {
+    margin: 0 auto;
+    width: 41vw;
+  }
+  
+  .home-bottom .social ul {
+    margin-top: 5vw;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .home-bottom .social li:not(:last-child) {
+    margin-left: 0;
+  }
 }
