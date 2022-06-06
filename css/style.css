@@ -25,6 +25,10 @@ body {
   text-decoration: underline;
 }
 
+.text-orange {
+  color: #FF8D1C;
+}
+
 /* #Btn
 ================================================== */
 .btn {
@@ -61,6 +65,13 @@ body {
 .btn.btn-secondary {
   color: white;
   background-image: linear-gradient(to bottom, #FA841D, #F1711F);
+}
+
+/* Tertiary */
+.btn.btn-tertiary {
+  color: #868686;
+  background-color: #FFFFFF;
+  font-weight: 200;
 }
 
 @media (max-width: 1023.98px) {
@@ -104,6 +115,32 @@ body {
 
 @media (max-width: 1023.98px) {
   .input-primary {
+    border-radius: 2.65vw;
+    height: 10.15vw;
+    width: 71.25vw;
+  }
+}
+
+/* #Select
+================================================== */
+.select-primary {
+  font-family: inherit;
+  background-color: white;
+  text-align: center;
+  border: none;
+  border-radius: .5vw;
+  height: 1.875vw;
+  width: 13.17vw;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, .16);
+
+  appearance: none;
+  background-image: url('../img/icons/chevron-down-gray.svg');
+  background-repeat: no-repeat;
+  background-position: 3.6vw 50%;
+}
+
+@media (max-width: 1023.98px) {
+  .select-primary {
     border-radius: 2.65vw;
     height: 10.15vw;
     width: 71.25vw;
@@ -647,4 +684,64 @@ body {
 #contactPopup .checkbox {
   margin-top: 4.83vw;
   margin-bottom: 2vw;
+}
+
+/* #Employees
+================================================== */
+.employees .top {
+  background-color: #f9f7f7;
+  padding: 8.93vw 6vw;
+}
+
+.employees .top .logo img {
+  width: 100%;
+  margin-bottom: 9.17vw;
+}
+
+.employees h1 {
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 9.17vw;
+}
+
+.employees .icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 17.4vw;
+}
+
+.employees form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.employees form > div:not(:last-child) {
+  margin-bottom: 4.83vw;
+}
+
+.employees form .btn {
+  min-width: 48.3vw;
+  height: 10.86vw;
+}
+
+.employees .bottom {
+  padding: 9.17vw 0 3.38vw 0;
+}
+
+.employees .bottom .btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6.5vw;
+}
+
+.employees .bottom .btns .btn:first-child {
+  margin-left: 3.6vw;
+}
+
+.employees .bottom .btns .btn {
+  min-width: 39.85vw;
 }
